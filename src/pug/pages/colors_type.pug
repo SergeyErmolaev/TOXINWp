@@ -1,0 +1,54 @@
+extends ../layout/UIkit
+
+block variables
+  -var title = 'Colors&type'
+  
+block content
+  .container.colors-type-container
+    .colors_type
+      +palette-dark('100', 'Dark Shade 100%')
+      +palette-dark('75', 'Dark Shade 75%')
+      +palette-dark('50', 'Dark Shade 50%')
+      +palette-dark('25', 'Dark Shade 25%')
+      +palette-dark('5', 'Dark Shade 5%')
+      +palette-color('purple', 'Purple', '#bc9cff')
+      +palette-color('green', 'Green', '#6fcf97')
+        
+    
+      //- +fonts-type('h1', 'heading1', 'This one is the sub-section or widjet title')
+      //- +fonts-type('h2', 'heading2', 'Next one is the item title inside widgets')
+      //- +fonts-type('h3', 'heading3', 'This is a label or cta text')
+      //- +fonts-type('Body', 'body-font', 'This is the body text which is used for most of the design, like paragrafs, list, etc.')
+      
+    .font-classification-block
+      .font-item
+        .heading-first_up h1
+        .heading-second_up h2
+        .heading-third_up h3
+        .body-font Body
+      .font-description
+        .heading1 This one is the sub-section or widget title
+        .heading2 
+          |Next one is the item title inside
+          br
+          | widgets
+        .heading3 This is a label or cta text
+        .body-font 
+          |This is the body text which is used for most
+          br
+          | of the design, like paragraphs, lists, etc.
+      
+      
+  //- table.table
+  //-   tr
+  //-     td Some text
+  //-     td Some text
+  //-     td Some text
+  //-   tr
+  //-     td Some text
+  //-     td Some text
+  //-     td Some text
+  //-   tr
+  //-     td Some text
+  //-     td Some text
+  //-     td Some text

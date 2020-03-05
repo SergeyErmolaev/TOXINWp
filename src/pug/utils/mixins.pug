@@ -1,0 +1,23 @@
+mixin item(title, descr)
+  .item
+    h2.item-title=title
+    p.item-descr=descr
+
+mixin palette-dark(opacity, description)
+  .palette
+    div(class='palette__item palette__dark-shade-' + opacity)
+    .palette__color-description
+      p.palette__color-description_font-position.font-bold= description
+      p.font-uppercase= '#1f2041'
+
+mixin palette-color(color, description, identification)    
+  .palette
+    div(class='palette__item palette__' + color)
+    .palette__color-description
+      p.palette__color-description_font-position.font-bold= description
+      p.font-uppercase= identification
+
+//- mixin fonts-type(item, definition, description)
+//-   .font-classification-block.row.row-col-2
+//-     div(class='font-item font-uppercase col-sm-auto ' + definition)= item
+//-     div(class='font-description col ' + definition)= description
